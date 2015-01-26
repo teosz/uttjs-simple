@@ -1,0 +1,6 @@
+{
+  "name" : "simple-utt",
+  "dependencies": {
+    "utt" : "tradingticket/utt.js"
+  }
+}

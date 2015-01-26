@@ -1,0 +1,23 @@
+{
+  "name": "utt-js",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "*",
+    "grunt": "*",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-coffee": "*",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jsdoc": "^0.5.7",
+    "grunt-mocha-test": "*",
+    "ink-docstrap": "^0.4.12",
+    "jsdoc": "^3.3.0-alpha10",
+    "load-grunt-tasks": "^1.0.0",
+    "matchdep": "*",
+    "mocha": "*",
+    "sinon": "*"
+  }
+}

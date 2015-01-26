@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="../utt.min.js" type="text/javascript"></script>
+        <title>UTT.JS DEMO</title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            utt = new Utt();
+        </script>
+    </head>
+    <body>
+        <h1>UTT.JS DEMO</h1>
+        <input type="button" value="open-tradeit"  onClick="utt.open()"/>
+        <input type="button" value="close-tradeit" onClick="utt.close()"/>
+    </body>
+    <script type="text/javascript">
+
+        utt.init({
+          "active": true,
+          "brokers": {
+            "TD": "TD Ameritrade",
+            "Schwabs": "Charles Schwab",
+            "Scottrade": "Scottrade",
+            "Etrade": "E*Trade",
+            "Fidelity": "Fidelity"
+          },
+          "widgetParams" : {
+            "broker": "placeholder",
+            "action": "buy",
+            "quantity": "99",
+            "class": "tradeit-button-buy",
+            "company-name": "International Business Machines Corp",
+            "prices": "[12.4]",
+            "quantity": "99",
+            "stock-symbol": "IBM"
+          }
+        });
+    </script>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "utt-js",
+  "description": "",
+  "main": "dist/uttjs.js",
+  "version": "0.0.3",
+  "dependencies": {},
+  "homepage": "https://github.com/tradingticket/utt.js",
+  "_release": "0.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.3",
+    "commit": "66d35ecdef88a3b23bd35a47c71e6d07cd8eb92a"
+  },
+  "_source": "git://github.com/tradingticket/utt.js.git",
+  "_target": "*",
+  "_originalSource": "tradingticket/utt.js"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "utt-js",
+  "description": "",
+  "main": "dist/uttjs.js",
+  "version": "0.0.0",
+  "dependencies": {}
+}
+

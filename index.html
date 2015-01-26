@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="bower_components/utt/src/utt.js"  type="text/javascript"></script>
+<title>UTT.JS DEMO</title>
+<meta charset="utf-8">
+<script type="text/javascript">
+utt = new Utt();
+</script>
+</head>
+<body>
+  <h1>UTT.JS DEMO</h1>
+  <div>
+    <div style="float:left;border-right:solid 1px #000;padding-right:100px">
+      <h1> Simple demo </h1>
+      <input type="button" value="BUY QTY : 10 (YHOO)"  onClick="openExample0()"/><br />
+      <input type="button" value="CLOSE" onClick="utt.close()"/>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+function openExample0()
+{
+  utt.open(1,{
+    "action": "buy",
+    "companyName": "Yahoo! Inc",
+    "quantity": "10",
+    "symbol": "YHOO"
+  });
+}
+utt.init({
+  "closeButton": 1,
+  "appPath" : "http://localhost:9000/",
+  "brokers": {
+    "TD": "TD Ameritrade",
+    "Schwabs": "Charles Schwab",
+    "Scottrade": "Scottrade",
+    "Etrade": "E*Trade",
+    "Fidelity": "Fidelity"
+  },
+  "widgetParams":{
+    "action": "buy",
+    "companyNsame": "Yahoo! Inc",
+    "quantity": "0",
+    "symbol": "YHOO"
+  }
+});
+</script>
+</html>
