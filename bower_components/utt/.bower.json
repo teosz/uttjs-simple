@@ -1,17 +1,16 @@
 {
   "name": "utt-js",
   "description": "",
-  "main": "dist/uttjs.js",
-  "version": "0.0.3",
+  "main": "dist/utt.min.js",
   "dependencies": {},
   "homepage": "https://github.com/tradingticket/utt.js",
-  "_release": "0.0.3",
+  "_release": "c9fd14e151",
   "_resolution": {
-    "type": "version",
-    "tag": "0.0.3",
-    "commit": "66d35ecdef88a3b23bd35a47c71e6d07cd8eb92a"
+    "type": "branch",
+    "branch": "refactor/utt-next",
+    "commit": "c9fd14e1511601b76277637ee5b4d5e838ca6c8e"
   },
   "_source": "git://github.com/tradingticket/utt.js.git",
-  "_target": "*",
+  "_target": "refactor/utt-next",
   "_originalSource": "tradingticket/utt.js"
 }

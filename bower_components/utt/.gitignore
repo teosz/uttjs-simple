@@ -1,5 +1,7 @@
 node_modules
 bower_components
 dist
-.tmp
-doc
+dest
+*.sublime-workspace
+*.sublime-project
+.DS_Store

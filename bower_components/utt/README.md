@@ -1,8 +1,10 @@
 utt.js
 ======
-a javascript module that helps to call the tradingticket
+A javascript api for calling the TRADEIT trading ticket
 
-[Check out demo](../demo/)
+[Check out demo](https://www.tradingticket.com/utt.js/demo/)
+
+[Check out doc](https://www.tradingticket.com/utt.js/doc/)
 
 ----
 
@@ -11,7 +13,7 @@ Exemple :
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script src="../utt.min.js" type="text/javascript"></script>
+        <script src="https://www.tradingticket.com/utt.js/utt.min.js" type="text/javascript"></script>
         <title>UTT.JS DEMO</title>
         <meta charset="utf-8">
         <script type="text/javascript">
@@ -24,7 +26,7 @@ Exemple :
         <input type="button" value="close-tradeit" onClick="utt.close()"/>
     </body>
     <script type="text/javascript">
-        utt.init(config);
+        utt.init();
     </script>
 </html>
 

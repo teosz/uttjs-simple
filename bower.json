@@ -1,6 +1,7 @@
 {
   "name" : "simple-utt",
   "dependencies": {
-    "utt" : "tradingticket/utt.js"
+    "utt" : "tradingticket/utt.js#refactor/utt-next",
+    "tradeit-widget-generator" : "git@github.com:tradingticket/tradeit-widget-generator.git"
   }
 }

@@ -1,8 +1,7 @@
 {
   "name": "utt-js",
   "description": "",
-  "main": "dist/uttjs.js",
-  "version": "0.0.0",
+  "main": "dist/utt.min.js",
+  "version": "0.1.1",
   "dependencies": {}
 }
-

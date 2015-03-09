@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script src="bower_components/utt/src/utt.js"  type="text/javascript"></script>
+<script src="bower_components/utt/lib/utt.js"  type="text/javascript"></script>
 <title>UTT.JS DEMO</title>
 <meta charset="utf-8">
 <script type="text/javascript">
@@ -29,9 +29,9 @@ function openExample0()
     "symbol": "YHOO"
   });
 }
-utt.init({
+/*utt.init({
   "closeButton": 1,
-  "appPath" : "http://localhost:9000/",
+  "appPath" : "http://localhost:9000/?env=web",
   "brokers": {
     "TD": "TD Ameritrade",
     "Schwabs": "Charles Schwab",
@@ -41,10 +41,11 @@ utt.init({
   },
   "widgetParams":{
     "action": "buy",
-    "companyNsame": "Yahoo! Inc",
+    "companyName": "Yahoo! Inc",
     "quantity": "0",
     "symbol": "YHOO"
   }
-});
+});*/
+utt = new Utt({'showCloseButton' : 1 });
 </script>
 </html>
