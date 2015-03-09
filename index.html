@@ -11,21 +11,21 @@
   <div>
     <div style="float:left;border-right:solid 1px #000;padding-right:100px">
       <h1> Simple demo </h1>
-      <input type="button" value="BUY QTY : 10 (YHOO)"  onClick="openExample0()"/><br />
+      <input type="button" value="BUY QTY : 10 (AAPL)"  onClick="openExample0()"/><br />
       <input type="button" value="CLOSE" onClick="utt.close()"/>
     </div>
   </div>
 </body>
 <script type="text/javascript">
-function openExample0()
-{
-  utt.open(1,{
+function openExample0() {
+  utt.open({
     "action": "buy",
-    "companyName": "Yahoo! Inc",
     "quantity": "10",
-    "symbol": "YHOO"
+    "stockSymbol": "AAPL"
   });
 }
-utt = new Utt({'showCloseButton' : 1 });
+utt = new Utt("yahoo", {
+  'ticketPopupAppUrl': 'http://localhost:9000'
+});
 </script>
 </html>
