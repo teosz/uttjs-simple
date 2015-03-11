@@ -4,11 +4,11 @@
   "main": "dist/utt.min.js",
   "dependencies": {},
   "homepage": "https://github.com/tradingticket/utt.js",
-  "_release": "c9fd14e151",
+  "_release": "f45a870c32",
   "_resolution": {
     "type": "branch",
     "branch": "refactor/utt-next",
-    "commit": "c9fd14e1511601b76277637ee5b4d5e838ca6c8e"
+    "commit": "f45a870c323844da45ba7d1cd01404d3278c3c2a"
   },
   "_source": "git://github.com/tradingticket/utt.js.git",
   "_target": "refactor/utt-next",
