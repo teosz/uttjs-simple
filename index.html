@@ -12,7 +12,7 @@
     <div style="float:left;border-right:solid 1px #000;padding-right:100px">
       <h1> Simple demo </h1>
       <input type="button" value="BUY QTY : 10 (AAPL)"  onClick="openExample0()"/><br />
-      <input type="button" value="BUY QTY : 30 (GOOG)"  onClick="openExample1()"/><br />
+      <input type="button" value="SELL QTY : 50 (GOOG)"  onClick="openExample1()"/><br />
       <input type="button" value="CLOSE" onClick="utt.close()"/>
     </div>
   </div>
@@ -22,15 +22,15 @@ function openExample0() {
    utt.open({
     "action": "buy",
     "quantity": "10",
-    "stockSymbol": "AAPL"
+    "symbol": "AAPL"
  });
 }
 function openExample1(){
   utt.open({
     "action": "sell",
     "quantity": "50",
-    "stockSymbol": "GOOG"
-}); 
+    "symbol": "GOOG"
+});
 }
 utt = new Utt(0,{
   'ticketPopupAppUrl': 'http://localhost:9000'
