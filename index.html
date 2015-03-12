@@ -11,8 +11,9 @@
   <div>
     <div style="float:left;border-right:solid 1px #000;padding-right:100px">
       <h1> Simple demo </h1>
-      <input type="button" value="BUY QTY : 10 (AAPL)"  onClick="openExample0()"/><br />
-      <input type="button" value="SELL QTY : 50 (GOOG)"  onClick="openExample1()"/><br />
+      <input type="button" value="BUY QTY : 10 (AAPL)" onClick="openExample0()"/><br />
+      <input type="button" value="SELL QTY : 50 (GOOG)" onClick="openExample1()"/><br />
+      <input type="button" value="SELL SHORT QTY : 42 (IBM)" onClick="openExample2()"/><br />
       <input type="button" value="CLOSE" onClick="utt.close()"/>
     </div>
   </div>
@@ -21,19 +22,40 @@
 function openExample0() {
    utt.open({
     "action": "buy",
-    "quantity": "10",
+    "quantity": 10,
     "symbol": "AAPL",
-    "companyName": "Apple Inc"
- });
+    "companyName": "Apple Inc",
+    "prices": [10, 20, 30]
+  });
 }
-function openExample1(){
+
+function openExample1() {
   utt.open({
     "action": "sell",
-    "quantity": "50",
+    "quantity": 50,
     "symbol": "GOOG",
-    "companyName": "Google"
-});
+    "companyName": "Google Inc",
+    "prices": [10, 20, 30]
+  });
 }
+
+function openExample2() {
+  utt.open({
+    "action": "sellShort",
+    "expiration": "gtc",
+
+    "limitPrice": 1,
+    "stopPrice": 2,
+    "priceType": "stopLimit",
+
+    "quantity": 42,
+    "symbol": "IBM",
+
+    "companyName": "International Business Machines",
+    "prices": [10, 20, 30]
+  });
+}
+
 utt = new Utt(0,{
   'ticketPopupAppUrl': 'http://localhost:9000'
 });
